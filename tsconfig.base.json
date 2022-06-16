@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bookstore/books/feature": ["libs/books/feature/src/index.ts"]
+      "@bookstore/books/feature": ["libs/books/feature/src/index.ts"],
+      "@bookstore/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
