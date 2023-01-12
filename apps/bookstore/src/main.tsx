@@ -1,13 +1,11 @@
-import { StrictMode } from 'react';
-import * as ReactDOM from 'react-dom/client';
-
-import App from './app/app';
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+import { HTMLAttributes } from 'react';
+import styled from 'styled-components';
+const StyledMain = styled.main`
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 960px;
+`;
+export const Main = (props: HTMLAttributes<HTMLElement>) => (
+  <StyledMain>{props.children}</StyledMain>
 );
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+export default Main;
